@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formaliza Perú - Asesoría Laboral Gratuita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <button class="logo" onclick="scrollToSection('inicio')">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <span class="logo-text">
+                    Formaliza <span class="logo-accent">Perú</span>
+                </span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <button onclick="scrollToSection('inicio')" class="nav-link">Inicio</button>
+                <button onclick="scrollToSection('derechos')" class="nav-link">Derechos Laborales</button>
+                <button onclick="scrollToSection('beneficios')" class="nav-link">Beneficios</button>
+                <button onclick="scrollToSection('vulneracion')" class="nav-link">Qué Hacer</button>
+                <button onclick="scrollToSection('formalizacion')" class="nav-link">Formalízate</button>
+                <button onclick="scrollToSection('recursos')" class="nav-link">Recursos</button>
+                <button onclick="scrollToSection('impacto')" class="nav-link">Impacto</button>
+            </nav>
+
+            <!-- CTA Button Desktop -->
+            <button onclick="scrollToSection('recursos')" class="btn-cta-desktop">
+                Asesórate Gratis
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" onclick="toggleMenu()" id="menuToggle">
+                <svg class="menu-icon" id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="menu-close" id="closeIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileMenu">
+            <button onclick="scrollToSection('inicio')" class="nav-mobile-link">Inicio</button>
+            <button onclick="scrollToSection('derechos')" class="nav-mobile-link">Derechos Laborales</button>
+            <button onclick="scrollToSection('beneficios')" class="nav-mobile-link">Beneficios</button>
+            <button onclick="scrollToSection('vulneracion')" class="nav-mobile-link">Qué Hacer</button>
+            <button onclick="scrollToSection('formalizacion')" class="nav-mobile-link">Formalízate</button>
+            <button onclick="scrollToSection('recursos')" class="nav-mobile-link">Recursos</button>
+            <button onclick="scrollToSection('impacto')" class="nav-mobile-link">Impacto</button>
+            <button onclick="scrollToSection('recursos')" class="btn-cta-mobile">
+                Asesórate Gratis
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay">
+            <img src="https://images.unsplash.com/photo-1719154717485-2c35ce594ee0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZXJ1dmlhbiUyMHdvcmtlcnMlMjBvZmZpY2V8ZW58MXx8fHwxNzYyNjQwODAxfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Trabajadores peruanos">
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text-center">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    <span>Justicia Laboral Accesible para Todos</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Bienvenido a <br>
+                    <span class="hero-title-accent">Formaliza Perú</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Somos una iniciativa social dedicada a brindar asesoría laboral <strong>gratuita y accesible</strong> a trabajadores, jóvenes y emprendedores.
+                </p>
+                
+                <p class="hero-description">
+                    Nuestro objetivo es acercar la justicia laboral a quienes más la necesitan, ayudándote a conocer tus derechos, formalizar tu empleo y protegerte ante situaciones de abuso o desinformación.
+                </p>
+                
+                <p class="hero-description">
+                    Formaliza Perú combina herramientas digitales, talleres comunitarios y orientación personalizada para que puedas acceder a información confiable y ejercer tus derechos con seguridad.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('recursos')" class="btn-primary">
+                        Asesórate Hoy Mismo
+                    </button>
+                    <button onclick="scrollToSection('derechos')" class="btn-secondary">
+                        Conoce tus Derechos
+                    </button>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="hero-feature-card">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <h3>Talleres Comunitarios</h3>
+                        <p>Formación presencial y accesible en tu comunidad</p>
+                    </div>
+                    
+                    <div class="hero-feature-card">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <h3>Orientación Personalizada</h3>
+                        <p>Asesoría directa para tu caso específico</p>
+                    </div>
+                    
+                    <div class="hero-feature-card">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                        <h3>Herramientas Digitales</h3>
+                        <p>Recursos en línea disponibles 24/7</p>
+                    </div>
+                </div>
+                
+                <p class="hero-footer-text">
+                    Tu futuro laboral importa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Derechos Fundamentales -->
+    <section id="derechos" class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Derechos Laborales Fundamentales</h2>
+                <p class="section-description">
+                    Todos los trabajadores, sin importar su tipo de empleo, cuentan con derechos reconocidos por la legislación peruana. Estos derechos garantizan condiciones dignas, seguridad y estabilidad en el trabajo.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card card-border-blue">
+                    <div class="card-icon icon-blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Derecho a un contrato escrito</h3>
+                    <p>Garantiza la relación formal entre el trabajador y el empleador, según lo establecido en la Ley de Productividad y Competitividad Laboral (D.S. N.° 003-97-TR).</p>
+                </div>
+
+                <div class="card card-border-amber">
+                    <div class="card-icon icon-amber">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Derecho a una jornada máxima</h3>
+                    <p>Se reconoce una jornada de hasta 8 horas diarias o 48 horas semanales, de acuerdo con la Constitución Política del Perú.</p>
+                </div>
+
+                <div class="card card-border-green">
+                    <div class="card-icon icon-green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3>Derecho a una remuneración justa y oportuna</h3>
+                    <p>Todo trabajador debe recibir un pago puntual que no sea menor al sueldo mínimo establecido.</p>
+                </div>
+
+                <div class="card card-border-purple">
+                    <div class="card-icon icon-purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Derecho a vacaciones</h3>
+                    <p>Corresponde a 30 días de descanso remunerado por cada año completo de servicios, conforme al Decreto Supremo N.° 012-92-TR.</p>
+                </div>
+
+                <div class="card card-border-red">
+                    <div class="card-icon icon-red">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>Derecho a la seguridad social</h3>
+                    <p>Permite acceder a atención médica y cobertura de salud a través de EsSalud o una entidad similar, según la Ley de Modernización de la Seguridad Social en Salud.</p>
+                </div>
+
+                <div class="card card-border-slate">
+                    <div class="card-icon icon-slate">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Protección ante el despido arbitrario</h3>
+                    <p>La Constitución garantiza que ningún trabajador puede ser despedido sin causa justa ni el debido procedimiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Formales -->
+    <section id="beneficios" class="section-gradient-amber">
+        <div class="section-bg-image">
+            <img src="https://images.unsplash.com/photo-1759310610325-2c7cb621e5e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZSUyMGZvcm1hbHxlbnwxfHx8fDE3NjI2NDA4MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Beneficios formales">
+        </div>
+
+        <div class="container relative-z">
+            <div class="section-header">
+                <h2 class="section-title">Beneficios del Trabajo Formal</h2>
+                <p class="section-description">
+                    El trabajo formal brinda seguridad económica, protección social y oportunidades de desarrollo. Además, te permite acceder a beneficios reconocidos por la ley peruana.
+                </p>
+            </div>
+
+            <div class="cards-grid cards-beneficios">
+                <div class="card-beneficio">
+                    <div class="card-beneficio-content">
+                        <div class="card-beneficio-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                                <rect x="2" y="7" width="20" height="5"></rect>
+                                <line x1="12" y1="22" x2="12" y2="7"></line>
+                                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Gratificaciones</h3>
+                            <p>Los trabajadores tienen derecho a dos pagos adicionales al año, en julio y diciembre, equivalentes a un sueldo mensual, conforme a la Ley 27735.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-beneficio">
+                    <div class="card-beneficio-content">
+                        <div class="card-beneficio-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11-.3-11 5 0 1.8 0 3 2 4.5V20h4v-2h3v2h4v-4c1-.5 1.7-1 2-2h2v-4h-2c0-1-.5-1.5-1-2h0V5z"></path>
+                                <path d="M2 9v1c0 1.1.9 2 2 2h1"></path>
+                                <path d="M16 11h0"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Compensación por Tiempo de Servicios (CTS)</h3>
+                            <p>Este beneficio actúa como un fondo de ahorro que protege al trabajador ante un eventual cese laboral, de acuerdo con el Decreto Supremo 001-97-TR.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-beneficio">
+                    <div class="card-beneficio-content">
+                        <div class="card-beneficio-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12h.01"></path>
+                                <path d="M15 12h.01"></path>
+                                <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
+                                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Asignación familiar</h3>
+                            <p>Los trabajadores con hijos menores o estudiantes reciben un pago adicional equivalente al 10% del sueldo mínimo, conforme a la Ley 25129.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-beneficio">
+                    <div class="card-beneficio-content">
+                        <div class="card-beneficio-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Seguro de salud</h3>
+                            <p>Permite acceder a atención médica y hospitalaria para el trabajador y su familia, según lo establecido en la Ley 26790.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-beneficio">
+                    <div class="card-beneficio-content">
+                        <div class="card-beneficio-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Sistema de pensiones (ONP o AFP)</h3>
+                            <p>Garantiza un fondo para la jubilación mediante aportes mensuales, sustentado en los Decretos Legislativos 19990 y 25897.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-beneficio">
+                    <div class="card-beneficio-content">
+                        <div class="card-beneficio-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Capacitación laboral</h3>
+                            <p>La ley promueve que los trabajadores puedan acceder a programas de formación y desarrollo profesional para mejorar sus habilidades y productividad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout-dark">
+                <p>
+                    Formalizarte no solo te da estabilidad, sino también acceso a todos estos beneficios que <strong>protegen tu presente y aseguran tu futuro</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vulneración de Derechos -->
+    <section id="vulneracion" class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge-alert">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span>Protege tus derechos</span>
+                </div>
+                
+                <h2 class="section-title">Qué Hacer si se Vulneran tus Derechos</h2>
+                <p class="section-description">
+                    Si tus derechos laborales son vulnerados, existen mecanismos legales y gratuitos para protegerte.
+                </p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Dialoga con tu empleador</h3>
+                            <p>Intenta resolver el conflicto directamente y registra los hechos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Acude a SUNAFIL</h3>
+                            <p>Esta entidad fiscaliza y sanciona a las empresas que incumplen las normas laborales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Busca orientación gratuita</h3>
+                            <p>En Formaliza Perú te ofrecemos acompañamiento para entender el proceso y presentar reclamos de forma segura.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Guarda evidencias</h3>
+                            <p>Contratos, mensajes, boletas o testigos pueden servir para sustentar tu caso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout-dark">
+                <p>
+                    <strong>Informarte y actuar</strong> es el primer paso para hacer respetar tus derechos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Formalización -->
+    <section id="formalizacion" class="section-dark">
+        <div class="bg-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+
+        <div class="container relative-z">
+            <div class="section-header">
+                <h2 class="section-title text-white">Formalízate Paso a Paso</h2>
+                <p class="section-description text-light">
+                    La formalización laboral permite acceder a beneficios, protección y mayores oportunidades de crecimiento.
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">1</div>
+                    <div class="process-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Registra tu RUC en SUNAT</h3>
+                    <p>Este registro es gratuito y te permite emitir comprobantes de pago.</p>
+                    <div class="arrow-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">2</div>
+                    <div class="process-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3>Elige tu régimen laboral</h3>
+                    <p>Dependiendo del tamaño y tipo de tu negocio (general, MYPE o independiente).</p>
+                    <div class="arrow-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">3</div>
+                    <div class="process-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Afíliate a un sistema de salud y pensión</h3>
+                    <p>A través de EsSalud, ONP o AFP.</p>
+                    <div class="arrow-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">4</div>
+                    <div class="process-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Capacítate</h3>
+                    <p>Participa en los talleres gratuitos de Formaliza Perú sobre derechos y obligaciones laborales.</p>
+                </div>
+            </div>
+
+            <div class="callout-amber">
+                <p>
+                    <strong>Formalizarte te brinda seguridad</strong> y te abre el camino hacia un desarrollo sostenible y justo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="section-gradient-amber">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recursos y Guías</h2>
+                <p class="section-description">
+                    Aprende de forma práctica con nuestros materiales gratuitos
+                </p>
+            </div>
+
+            <div class="recursos-grid">
+                <div class="recurso-card">
+                    <div class="recurso-header">
+                        <div class="recurso-bg">
+                            <img src="https://images.unsplash.com/photo-1762158007836-25d13ab34c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjBsZWFybmluZyUyMHdvcmtzaG9wfGVufDF8fHx8MTc2MjY0MDgwMnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Recurso">
+                        </div>
+                        <div class="recurso-icon recurso-icon-blue">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recurso-body">
+                        <span class="recurso-tag">Guía Práctica</span>
+                        <h3>Guía: Cómo formalizarte paso a paso</h3>
+                        <button class="recurso-link">
+                            Acceder ahora
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-header">
+                        <div class="recurso-bg">
+                            <img src="https://images.unsplash.com/photo-1762158007836-25d13ab34c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjBsZWFybmluZyUyMHdvcmtzaG9wfGVufDF8fHx8MTc2MjY0MDgwMnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Recurso">
+                        </div>
+                        <div class="recurso-icon recurso-icon-purple">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recurso-body">
+                        <span class="recurso-tag">Guía Legal</span>
+                        <h3>Guía: Qué hacer ante un despido injusto</h3>
+                        <button class="recurso-link">
+                            Acceder ahora
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-header">
+                        <div class="recurso-bg">
+                            <img src="https://images.unsplash.com/photo-1762158007836-25d13ab34c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjBsZWFybmluZyUyMHdvcmtzaG9wfGVufDF8fHx8MTc2MjY0MDgwMnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Recurso">
+                        </div>
+                        <div class="recurso-icon recurso-icon-red">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recurso-body">
+                        <span class="recurso-tag">Video Tutorial</span>
+                        <h3>Videos educativos: Derechos laborales explicados en un minuto</h3>
+                        <button class="recurso-link">
+                            Acceder ahora
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="recurso-card">
+                    <div class="recurso-header">
+                        <div class="recurso-bg">
+                            <img src="https://images.unsplash.com/photo-1762158007836-25d13ab34c1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjBsZWFybmluZyUyMHdvcmtzaG9wfGVufDF8fHx8MTc2MjY0MDgwMnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Recurso">
+                        </div>
+                        <div class="recurso-icon recurso-icon-green">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="recurso-body">
+                        <span class="recurso-tag">FAQ</span>
+                        <h3>Preguntas frecuentes: Respuestas a las dudas laborales más comunes</h3>
+                        <button class="recurso-link">
+                            Acceder ahora
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout-white">
+                <p>
+                    Estos recursos buscan que <strong>cualquier persona pueda entender fácilmente</strong> sus derechos y cómo ejercerlos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto -->
+    <section id="impacto" class="section-white">
+        <div class="section-bg-image-left">
+            <img src="https://images.unsplash.com/photo-1659869764315-dc3d188141fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZWdhbCUyMGRvY3VtZW50cyUyMGp1c3RpY2V8ZW58MXx8fHwxNzYyNjQwODAyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Impacto">
+        </div>
+
+        <div class="container relative-z">
+            <div class="section-header">
+                <h2 class="section-title">Impacto del Proyecto</h2>
+                <p class="section-description">
+                    Formaliza Perú busca reducir la desinformación laboral y fortalecer la confianza en las instituciones. Promueve una cultura de <strong>formalidad, equidad y justicia</strong>, contribuyendo directamente al cumplimiento de los Objetivos de Desarrollo Sostenible:
+                </p>
+            </div>
+
+            <div class="ods-grid">
+                <div class="ods-card ods-card-blue">
+                    <div class="ods-icon ods-icon-blue">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <span class="ods-badge ods-badge-blue">ODS 8</span>
+                    <h3>Trabajo Decente y Crecimiento Económico</h3>
+                    <p>Promover el trabajo decente y el crecimiento económico sostenible para todos los peruanos.</p>
+                </div>
+
+                <div class="ods-card ods-card-amber">
+                    <div class="ods-icon ods-icon-amber">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <span class="ods-badge ods-badge-amber">ODS 16</span>
+                    <h3>Paz, Justicia e Instituciones Sólidas</h3>
+                    <p>Fomentar instituciones sólidas, justas y accesibles para todos los ciudadanos.</p>
+                </div>
+            </div>
+
+            <div class="callout-dark-impact">
+                <div class="bg-blobs">
+                    <div class="blob blob-amber"></div>
+                </div>
+                <div class="relative-z">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem; color: #fbbf24;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                    <p>
+                        Con este proyecto se busca <strong>empoderar a los trabajadores</strong> para que conozcan, ejerzan y defiendan sus derechos de manera informada y segura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <span>
+                        Formaliza <span style="color: #f59e0b;">Perú</span>
+                    </span>
+                </div>
+                <p class="footer-description">
+                    Justicia laboral accesible para todos. Ayudando a trabajadores, jóvenes y emprendedores peruanos a conocer y defender sus derechos.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio" onclick="scrollToSection('inicio')">Inicio</a></li>
+                        <li><a href="#derechos" onclick="scrollToSection('derechos')">Derechos</a></li>
+                        <li><a href="#beneficios" onclick="scrollToSection('beneficios')">Beneficios</a></li>
+                        <li><a href="#formalizacion" onclick="scrollToSection('formalizacion')">Formalízate</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#recursos" onclick="scrollToSection('recursos')">Guías</a></li>
+                        <li><a href="#recursos" onclick="scrollToSection('recursos')">Videos</a></li>
+                        <li><a href="#recursos" onclick="scrollToSection('recursos')">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:info@formalizaperu.com">info@formalizaperu.com</a></li>
+                        <li><a href="tel:+51944144257">+51 944 144 257</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Formaliza Perú. Todos los derechos reservados.</p>
+            <p>Iniciativa social sin fines de lucro</p>
+            <!-- Agregar esta línea -->
+            <p class="developer-credit">Desarrollado por: <strong>Jhon Aguilar</strong></p>
+        </div>
+    </div>
+</footer>
+
+    <!-- WhatsApp Button -->
+    <button class="whatsapp-button" onclick="openWhatsApp()" aria-label="Contactar por WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
